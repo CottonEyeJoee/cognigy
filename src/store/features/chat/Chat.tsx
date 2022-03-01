@@ -1,26 +1,25 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { SocketClient } from '@cognigy/socket-client';
-import { useSelector } from 'react-redux';
+import { useAppDispatch, useAppSelector } from 'store/hooks';
 import { getMessage, selectChat } from './chatSlice';
 
 const Chat: React.FC = (): JSX.Element => {
-	const history = useSelector(selectChat);
-	React.useEffect(() => {
-		const websocket = new SocketClient(
-			'https://endpoint-trial.cognigy.ai',
-			'c62c5fbea632152a4e3265f21862b91e21eacca1f135a1a07b031a0c6f5c6274',
-			{ forceWebsockets: true }
-		);
+	const webSocket = useRef<SocketClient | null>(null);
+	const history = useAppSelector(selectChat);
 
-		websocket.on('output', output => {
+	React.useEffect(() => {
+		webSocket.current = new SocketClient(
+			process.env.API_ENDPOINT_URI!,
+			process.env.API_TOKEN!
+		);
+		webSocket.current.connect();
+		webSocket.current.on('output', output => {
 			getMessage(output);
 			console.log('Text: ' + output.text + '   Data: ' + output.data);
 		});
-
-		async () => await websocket.connect();
-		websocket.sendMessage('hello there');
-		websocket.sendMessage('hello there', { color: 'green' });
-		websocket.sendMessage('', { color: 'green' });
+		webSocket.current.sendMessage('hello there');
+		webSocket.current.sendMessage('hello there', { color: 'green' });
+		webSocket.current.sendMessage('', { color: 'green' });
 	}, []);
 	console.log('history', history);
 	return <div>Chat</div>;
