@@ -1,5 +1,6 @@
 import { ServeOptions, BuildOptions, Loader } from 'esbuild';
-import env from '../plugins/env';
+// import envPlugin from '../plugins/envPlugin';
+import 'dotenv/config';
 
 type ILoader = {
 	[key: string]: Loader;
@@ -13,6 +14,11 @@ export const DEV_LINK_TAG = `<link rel="stylesheet" href="http://localhost:8080/
 export const DEV_SCRIPT_TAG = `<script src="http://localhost:8080/serve/index.js" type="module"></script>`;
 export const BUILD_LINK_TAG = `<link rel="stylesheet" href="index.css">`;
 export const BUILD_SCRIPT_TAG = `<script src="index.js" type="module"></script>`;
+
+const define = {
+	'process.env.API_ENDPOINT_URI': JSON.stringify(process.env.API_ENDPOINT_URI),
+	'process.env.API_TOKEN': JSON.stringify(process.env.API_TOKEN),
+};
 
 const serveLoader: ILoader = {
 	'.png': 'dataurl',
@@ -45,7 +51,8 @@ export const transformOptions: BuildOptions = {
 	format: 'esm',
 	inject: ['esbuild/config/react-shim.ts'],
 	loader: serveLoader,
-	plugins: [env],
+	// plugins: [envPlugin],
+	define,
 };
 
 export const buildOptions: BuildOptions = {
@@ -58,5 +65,4 @@ export const buildOptions: BuildOptions = {
 	inject: ['esbuild/config/react-shim.ts'],
 	target: ['es6'],
 	loader: buildLoader,
-	plugins: [env],
 };
