@@ -9,3 +9,6 @@ coverage
 
 # log
 yarn-error.log
+
+# secrets 🤫
+.env.local

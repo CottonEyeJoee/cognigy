@@ -1,7 +1,11 @@
+import { Typography } from '@mui/material';
+
 export default function App() {
-  return (
-    <h1 style={{textAlign: 'center'}}>
-      ready for development
-    </h1>
-  );
+	return (
+		<>
+			<Typography variant='h1' sx={{ textAlign: 'center' }} gutterBottom>
+				Chatbot
+			</Typography>
+		</>
+	);
 }
