@@ -1,13 +1,31 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import type { RootState } from '../../store';
+import type { RootState } from '../store';
 
 interface ChatState {
 	history: Message[];
 }
 
+export enum Origin {
+	User = 'user',
+	Bot = 'bot',
+}
+
+interface Data {
+	imgSrc?: string;
+}
+
 interface Message {
+	origin: Origin;
 	text: string;
-	data: any;
+	data: Data;
+	id: string;
+}
+
+export interface Reply {
+	source: Origin;
+	text: string;
+	data: Data;
+	traceId: string;
 }
 
 const initialState: ChatState = {
@@ -21,8 +39,9 @@ export const chatSlice = createSlice({
 		postMessage: (state, action: PayloadAction<Message>) => {
 			state.history.push(action.payload);
 		},
-		getMessage: (state, action: PayloadAction<Message>) => {
-			state.history.push(action.payload);
+		getMessage: (state, action: PayloadAction<Reply>) => {
+			const { source: origin, text, data, traceId: id } = action.payload;
+			state.history.push({ origin, text, data, id });
 		},
 	},
 });
