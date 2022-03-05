@@ -11,6 +11,7 @@ const COLORS = {
 		blue: 'hsl(217, 100%, 28.6%)',
 		grey: 'hsl(210, 3%, 68%)',
 		black: 'hsl(204, 28%, 7%)',
+		white: 'hsl(200, 23%, 95%)',
 		red: 'hsl(342, 89%, 38%)',
 	},
 }
@@ -40,7 +41,7 @@ export const getDesignTokens = (mode: PaletteMode) => ({
 					// palette values for dark mode
 					primary: {
 						main: COLORS.dark.blue,
-						contrastText: COLORS.dark.grey,
+						contrastText: COLORS.dark.white,
 					},
 					secondary: {
 						main: COLORS.dark.black,
