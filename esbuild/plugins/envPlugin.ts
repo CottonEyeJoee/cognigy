@@ -1,4 +1,4 @@
-import 'dotenv/config';
+import 'dotenv/config'
 
 const envPlugin = {
 	name: 'env',
@@ -6,12 +6,12 @@ const envPlugin = {
 		build.onResolve({ filter: /^env$/ }, args => ({
 			path: args.path,
 			namespace: 'env-ns',
-		}));
+		}))
 		build.onLoad({ filter: /.*/, namespace: 'env-ns' }, () => ({
 			contents: JSON.stringify(process.env),
 			loader: 'json',
-		}));
+		}))
 	},
-};
+}
 
-export default envPlugin;
+export default envPlugin

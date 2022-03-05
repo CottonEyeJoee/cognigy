@@ -9,7 +9,6 @@ import {
 	PaletteMode,
 	Snackbar,
 	ThemeProvider,
-	useMediaQuery,
 } from '@mui/material'
 import Slide, { SlideProps } from '@mui/material/Slide'
 
