@@ -12,8 +12,8 @@ export const MessageBubble = styled(Paper, {
 	maxWidth: '90%',
 	color:
 		origin === Origin.User
-			? theme.palette.text.primary
-			: theme.palette.text.secondary,
+			? theme.palette.primary.contrastText
+			: theme.palette.secondary.contrastText,
 	backgroundColor:
 		origin === Origin.User
 			? theme.palette.primary.main

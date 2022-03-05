@@ -21,15 +21,13 @@ export const getDesignTokens = (mode: PaletteMode) => ({
 		...(mode === 'light'
 			? {
 					// palette values for light mode
-					text: {
-						primary: COLORS.light.white,
-						secondary: COLORS.light.blue,
-					},
 					primary: {
 						main: COLORS.light.blue,
+						contrastText: COLORS.light.white,
 					},
 					secondary: {
 						main: COLORS.light.grey,
+						contrastText: COLORS.light.blue,
 					},
 					background: {
 						paper: COLORS.light.white,
@@ -40,15 +38,13 @@ export const getDesignTokens = (mode: PaletteMode) => ({
 			  }
 			: {
 					// palette values for dark mode
-					text: {
-						primary: COLORS.dark.grey,
-						secondary: COLORS.dark.grey,
-					},
 					primary: {
 						main: COLORS.dark.blue,
+						contrastText: COLORS.dark.grey,
 					},
 					secondary: {
 						main: COLORS.dark.black,
+						contrastText: COLORS.dark.grey,
 					},
 					background: {
 						paper: COLORS.dark.black,
