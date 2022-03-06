@@ -59,6 +59,8 @@
 
 - [ ] Setup Hot Reload
 
+- [ ] Improve performance (reduce rerender)
+
 ## Known Bugs :lady_beetle:
 
 - When a new message is displayed, scrolling down is not efficient
