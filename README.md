@@ -55,7 +55,9 @@
 
 ## TODO :construction:
 
-- [ ] Complete dark colour theme
+- [ ] Refine dark colour theme
+
+- [ ] Setup Hot Reload
 
 ## Known Bugs :lady_beetle:
 
