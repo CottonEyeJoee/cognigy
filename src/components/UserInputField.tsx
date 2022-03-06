@@ -30,7 +30,7 @@ export const UserInputField: React.FC<Props> = ({
 	}
 
 	return (
-		<Paper elevation={2} variant='outlined' square>
+		<Paper variant='outlined' square>
 			<Grid p={1} container spacing={0.5}>
 				<Grid item xs>
 					<TextField

@@ -11,7 +11,7 @@ interface Props {
 
 export const TitleBar: React.FC<Props> = ({ onThemeChange }): JSX.Element => {
 	return (
-		<Bar elevation={2} variant='outlined' square>
+		<Bar variant='outlined' square>
 			<Stack
 				direction='row'
 				justifyContent='space-between'
