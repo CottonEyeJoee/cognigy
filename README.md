@@ -1,5 +1,7 @@
 # Cognigy Frontend Developer Coding Challenge
 
+![Preview of the chatbot app](screenshots/preview.png)
+
 ## Requirements
 
 - [x] Written in Typescript
