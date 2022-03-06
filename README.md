@@ -32,7 +32,7 @@
 
 | Package                                  | Description                                                                                           |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| `[react, react-dom]`                     | DOM rendering library [(Github)](https://github.com/facebook/react)                                   |
+| `[react, react-dom]`                     | A JavaScript library for building user interfaces [(Github)](https://github.com/facebook/react)       |
 | `[redux, react-redux, @reduxjs/toolkit]` | Adaptation of the flux state managment for react [(Github)](https://github.com/reduxjs/redux)         |
 | `[@mui/material, @mui/icons-material]`   | Material UI library [(Github)](https://github.com/mui/material-ui)                                    |
 | `@cognigy/socket-client`                 | Cognigy chatbot websocket , you find more information [here](https://github.com/Cognigy/SocketClient) |
