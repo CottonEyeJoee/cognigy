@@ -50,7 +50,7 @@
 
 ## TODO :construction:
 
-- [x] Complete dark colour theme
+- [ ] Complete dark colour theme
 
 ## Known Bugs
 
