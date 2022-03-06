@@ -61,9 +61,11 @@
 
 - [ ] Improve performance (reduce rerender)
 
+- [ ] Embed external font/SVG files locally
+
 ## Known Bugs :lady_beetle:
 
-- When a new message is displayed, scrolling down is not efficient
+- When a new message is displayed containing an image URL, scrolling down is inconsistent due to the nature of images loaded via external URLs
 
 ## Scripts :scroll:
 
