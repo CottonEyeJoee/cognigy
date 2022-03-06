@@ -1,4 +1,62 @@
-`new Promise(writeReadMe('I swear ✋'))`
+# Cognigy Frontend Developer Coding Challenge
+
+## Requirements
+
+- [x] Written in Typescript
+
+- [x] Connects to a predefined existing Cognigy.AI bot
+
+- [x] Features a _"text input"_ field with a _"send"_ buttom
+
+  - [x] Both _"clicking the send button"_ and _"hitting return"_ submit the users message
+
+- [x] Messages sent/recieved using the [Cognigy.AI Socket-Client](https://github.com/Cognigy/SocketClient)
+
+- [x] All messages visually rendered in a chat history with _"message bubbles"_
+
+## Additional Features
+
+- [x] Loading animation while websocket is connecting
+
+- [x] Error message when the websocket throws an error
+
+- [x] Scrolls to the bottom of the chat window when a new message is displayed
+
+- [x] Theme switch for dark and light mode
+
+## Tooling
+
+| Package                                  | Description                                                                                           |
+| ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| `[react, react-dom]`                     | DOM rendering library [(Github)](https://github.com/facebook/react)                                   |
+| `[redux, react-redux, @reduxjs/toolkit]` | Adaptation of the flux state managment for react [(Github)](https://github.com/reduxjs/redux)         |
+| `[@mui/material, @mui/icons-material]`   | Material UI library [(Github)](https://github.com/mui/material-ui)                                    |
+| `@cognigy/socket-client`                 | Cognigy chatbot websocket , you find more information [here](https://github.com/Cognigy/SocketClient) |
+| `esbuild`                                | High performance bundler [(esbuild documentation)](https://esbuild.github.io/)                        |
+| `dotenv`                                 | Enviroment variables library [(Github)](https://github.com/motdotla/dotenv)                           |
+| `jest`                                   | Unit testing library [(Github)](https://github.com/facebook/jest)                                     |
+
+## Setup
+
+1. Open the terminal in the root directory & execute `yarn install` (`npm i`)
+
+1. Create an `.env' file in the root directory and add the following variables to this file using the credentials given in the code challenge instructions (don't forget to save the file)
+
+   - API_ENDPOINT_URI=[websocket-endpoint]
+
+   - API_TOKEN=[websocket-token]
+
+1. In the terminal execute `yarn start` (`npm start`) in the root directory
+
+## TODO :construction:
+
+- [x] Complete dark colour theme
+
+## Known Bugs
+
+- When a new message is displayed, scrolling down is not efficient
+
+## Scripts
 
 ### `yarn install`
 
