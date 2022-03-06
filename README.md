@@ -18,6 +18,8 @@
 
 ## Additional Features :fire:
 
+- [x] Using custom bundler ([esbuild](https://esbuild.github.io/))
+
 - [x] Loading animation while websocket is connecting
 
 - [x] Error message when the websocket throws an error
