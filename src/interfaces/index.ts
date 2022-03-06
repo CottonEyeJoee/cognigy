@@ -9,6 +9,11 @@ export enum GeneralStatus {
 	Error = 'error',
 }
 
+export enum ThemeMode {
+	Dark = 'dark',
+	Light = 'light',
+}
+
 export enum Origin {
 	User = 'user',
 	Bot = 'bot',
