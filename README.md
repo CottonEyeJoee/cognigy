@@ -1,8 +1,8 @@
 # Cognigy Frontend Developer Coding Challenge
 
-![Preview of the chatbot app](screenshots/preview.png)
+![Preview of the chatbot app](/screenshot/preview.png)
 
-## Requirements
+## Requirements :clipboard:
 
 - [x] Written in Typescript
 
@@ -16,7 +16,7 @@
 
 - [x] All messages visually rendered in a chat history with _"message bubbles"_
 
-## Additional Features
+## Additional Features :fire:
 
 - [x] Loading animation while websocket is connecting
 
@@ -26,7 +26,7 @@
 
 - [x] Theme switch for dark and light mode
 
-## Tooling
+## Tooling :toolbox:
 
 | Package                                  | Description                                                                                           |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -38,15 +38,16 @@
 | `dotenv`                                 | Enviroment variables library [(Github)](https://github.com/motdotla/dotenv)                           |
 | `jest`                                   | Unit testing library [(Github)](https://github.com/facebook/jest)                                     |
 
-## Setup
+## Setup :magic_wand:
 
 1. Open the terminal in the root directory & execute `yarn install` (`npm i`)
 
 1. Create an `.env' file in the root directory and add the following variables to this file using the credentials given in the code challenge instructions (don't forget to save the file)
 
-   - API_ENDPOINT_URI=[websocket-endpoint]
-
-   - API_TOKEN=[websocket-token]
+   ```env
+   API_ENDPOINT_URI={websocket-endpoint}
+   API_TOKEN={websocket-token}
+   ```
 
 1. In the terminal execute `yarn start` (`npm start`) in the root directory
 
@@ -54,11 +55,11 @@
 
 - [ ] Complete dark colour theme
 
-## Known Bugs
+## Known Bugs :lady_beetle:
 
 - When a new message is displayed, scrolling down is not efficient
 
-## Scripts
+## Scripts :scroll:
 
 ### `yarn install`
 
