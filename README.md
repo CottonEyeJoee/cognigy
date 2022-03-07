@@ -1,6 +1,8 @@
 # Cognigy Frontend Developer Coding Challenge
 
-![Preview of the chatbot app](/screenshot/preview.png)
+| Light                                                        | Dark                                                        |
+| ------------------------------------------------------------ | ----------------------------------------------------------- |
+| ![Preview of the chatbot app](/screenshot/preview_light.png) | ![Preview of the chatbot app](/screenshot/preview_dark.png) |
 
 ## Requirements :clipboard:
 
