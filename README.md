@@ -4,6 +4,12 @@
 | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | ![Preview of the chatbot app](/screenshot/preview_light.png) | ![Preview of the chatbot app](/screenshot/preview_dark.png) |
 
+## Foreword :pushpin:
+
+The project environment was set up based on the [article](https://dev.to/jleonardo007/setup-react-with-typescript-and-esbuild-159i) by [@jleonardo00](https://github.com/jleonardo007) on [dev.to](https://dev.to/)
+
+Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.com/jleonardo007/react-esbuild-template-ts-version)
+
 ## Requirements :clipboard:
 
 - [x] Written in Typescript
@@ -31,6 +37,8 @@
 - [x] Theme switch for dark and light mode
 
 - [x] Unit Tests
+
+- [x] Fully responsive design (set to mobile dimension for presentation)
 
 ## Tooling :toolbox:
 
