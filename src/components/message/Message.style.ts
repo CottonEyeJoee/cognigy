@@ -1,4 +1,4 @@
-import { Box, Paper, styled } from '@mui/material'
+import { Typography, Paper, styled } from '@mui/material'
 
 import { Origin } from 'interfaces'
 
@@ -19,13 +19,12 @@ export const MessageBubble = styled(Paper, {
 			? theme.palette.primary.main
 			: theme.palette.secondary.main,
 	alignSelf: origin === Origin.User ? 'end' : 'start',
+	overflow: 'hidden',
 }))
 
-export const MessageText = styled(Box)(({ theme }) => ({
-	padding: theme.spacing(1),
-}))
-
-export const MessageImage = styled('img')(({ theme }) => ({
+export const MessageImage = styled('img')(() => ({
 	display: 'block',
 	width: '100%',
+	maxHeight: 320,
+	objectFit: 'cover',
 }))

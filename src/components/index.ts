@@ -1,5 +1,9 @@
-import { Chat } from 'components/Chat'
-import { TitleBar } from 'components/TitleBar'
-import { UserInputField } from 'components/UserInputField'
+import { Chat } from 'components/chat/Chat'
+import { Message } from 'components/message/Message'
+import { TitleBar } from 'components/titleBar/TitleBar'
+import { UserInputField } from 'components/userInputField/UserInputField'
+import { Alert } from 'components/alert/Alert'
+import { Loading } from 'components/loading/Loading'
+import { ThemeSwitch } from 'components/themeSwitch/ThemeSwitch'
 
-export { Chat, TitleBar, UserInputField }
+export { Chat, Message, TitleBar, UserInputField, Alert, Loading, ThemeSwitch }

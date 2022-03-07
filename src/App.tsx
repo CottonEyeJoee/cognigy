@@ -11,7 +11,7 @@ import {
 
 import { postMessage, getMessage } from 'redux/features/chatSlice'
 import { TitleBar, Chat, UserInputField, Alert } from 'components'
-import { StyledGrid, StyledPaper } from 'App.styles'
+import { StyledPaper } from 'App.styles'
 import {
 	GeneralStatus,
 	TypingStatus,
@@ -19,7 +19,7 @@ import {
 	Reply,
 	ThemeMode,
 } from 'interfaces'
-import { getDesignTokens } from 'styles/theme'
+import { getDesignTokens } from 'theme'
 import { idGenerator } from 'utils'
 
 export const App: React.FC = (): JSX.Element => {
@@ -60,6 +60,7 @@ export const App: React.FC = (): JSX.Element => {
 		webSocket.current.on(
 			'typingStatus',
 			({ status }: { status: TypingStatus }): void => {
+				console.log('status', status)
 				setIsBotActive(status === TypingStatus.active ? true : false)
 			},
 		)
@@ -88,7 +89,7 @@ export const App: React.FC = (): JSX.Element => {
 		<ThemeProvider theme={theme}>
 			<StyledPaper>
 				<Alert
-					open={generalStatus === GeneralStatus.Error}
+					isOpen={generalStatus === GeneralStatus.Error}
 					// never happens, but if the user should know that, i have no idea either 🤷
 					text='Oops - something went wrong'
 				/>
@@ -96,12 +97,12 @@ export const App: React.FC = (): JSX.Element => {
 					<Grid item xs='auto'>
 						<TitleBar onThemeChange={onThemeChange} />
 					</Grid>
-					<StyledGrid item xs>
+					<Grid item xs sx={{ overflowY: 'auto' }}>
 						<Chat
 							isBotActive={isBotActive}
 							isLoading={generalStatus === GeneralStatus.Loading}
 						/>
-					</StyledGrid>
+					</Grid>
 					<Grid item xs='auto'>
 						<UserInputField sendMessage={sendMessage} />
 					</Grid>

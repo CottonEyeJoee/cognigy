@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledSwitch } from 'styles/ThemeSwitch.styles'
+import { StyledSwitch } from './ThemeSwitch.styles'
 
 interface Props {
 	onThemeChange: () => void

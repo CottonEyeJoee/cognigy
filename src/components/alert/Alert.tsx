@@ -3,15 +3,15 @@ import { Alert as MaterialAlert, Snackbar } from '@mui/material'
 import Slide, { SlideProps } from '@mui/material/Slide'
 
 interface Props {
-	open: boolean
+	isOpen: boolean
 	text: string
 }
 
-export const Alert: React.FC<Props> = ({ open, text }): JSX.Element => {
+export const Alert: React.FC<Props> = ({ isOpen, text }): JSX.Element => {
 	return (
 		<Snackbar
 			anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
-			open={open}
+			open={isOpen}
 			TransitionComponent={(props: SlideProps) => (
 				<Slide {...props} direction='down' />
 			)}

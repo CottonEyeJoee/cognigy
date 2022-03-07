@@ -1,12 +1,11 @@
 import React from 'react'
 import { Typography, Stack } from '@mui/material'
 
-import { Bar } from 'styles/TitleBar.styles'
-import { ThemeSwitch } from 'components/ThemeSwitch'
+import { ThemeSwitch } from 'components'
+import { Bar } from './TitleBar.styles'
 
 interface Props {
 	onThemeChange: () => void
-	isDarkMode: boolean
 }
 
 export const TitleBar: React.FC<Props> = ({ onThemeChange }): JSX.Element => {
@@ -17,7 +16,7 @@ export const TitleBar: React.FC<Props> = ({ onThemeChange }): JSX.Element => {
 				justifyContent='space-between'
 				alignItems='center'
 				spacing={2}>
-				<Typography variant='h1' component='h1' sx={{ flexGrow: 1 }}>
+				<Typography variant='h1' component='h1'>
 					Chatbot
 				</Typography>
 				<ThemeSwitch onThemeChange={onThemeChange} />

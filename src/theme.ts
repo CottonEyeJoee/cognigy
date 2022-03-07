@@ -9,10 +9,10 @@ const COLORS = {
 	},
 	dark: {
 		blue: 'hsl(217, 100%, 28.6%)',
-		grey: 'hsl(210, 3%, 68%)',
+		grey: 'hsl(210, 3%, 80%)',
 		black: 'hsl(204, 28%, 7%)',
 		white: 'hsl(200, 23%, 95%)',
-		red: 'hsl(342, 89%, 38%)',
+		red: 'hsl(342, 89%, 48%)',
 	},
 }
 
