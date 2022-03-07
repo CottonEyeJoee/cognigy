@@ -18,7 +18,7 @@
 
 ## Additional Features :fire:
 
-- [x] Using custom bundler ([esbuild](https://esbuild.github.io/))
+- [x] Custom bundler ([esbuild](https://esbuild.github.io/))
 
 - [x] Loading animation while websocket is connecting
 
@@ -27,6 +27,8 @@
 - [x] Scrolls to the bottom of the chat window when a new message is displayed
 
 - [x] Theme switch for dark and light mode
+
+- [x] Unit Tests
 
 ## Tooling :toolbox:
 
@@ -55,17 +57,19 @@
 
 ## TODO :construction:
 
-- [ ] Refine dark colour theme
+- Refine dark colour theme
 
-- [ ] Setup Hot Reload
+- Setup Hot Reload
 
-- [ ] Improve performance (reduce rerender)
+- Improve performance (reduce rerender)
 
-- [ ] Embed external font/SVG files locally
+- Embed external font/SVG files locally
 
 ## Known Bugs :lady_beetle:
 
 - When a new message is displayed containing an image URL, scrolling down is inconsistent due to the nature of images loaded via external URLs
+
+- Test does not run duo to syntax error, because of missing node environment
 
 ## Scripts :scroll:
 
