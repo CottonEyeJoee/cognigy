@@ -21,6 +21,7 @@
     "type-check": "tsc",
     "start": "yarn type-check && ts-node esbuild/serve",
     "build": "yarn type-check && ts-node esbuild/build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
     "test": "yarn type-check && jest"
   },
