@@ -60,7 +60,6 @@ export const App: React.FC = (): JSX.Element => {
 		webSocket.current.on(
 			'typingStatus',
 			({ status }: { status: TypingStatus }): void => {
-				console.log('status', status)
 				setIsBotActive(status === TypingStatus.active ? true : false)
 			},
 		)
