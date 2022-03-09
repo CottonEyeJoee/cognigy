@@ -4,7 +4,7 @@
 | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | ![Preview of the chatbot app](/screenshot/preview_light.png) | ![Preview of the chatbot app](/screenshot/preview_dark.png) |
 
-#[DEMO](https://cottoneyejoee.github.io/Cognigy/)
+## [Demo link](https://cottoneyejoee.github.io/Cognigy/)
 
 ## Foreword :pushpin:
 
