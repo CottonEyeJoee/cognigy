@@ -4,6 +4,8 @@
 | ------------------------------------------------------------ | ----------------------------------------------------------- |
 | ![Preview of the chatbot app](/screenshot/preview_light.png) | ![Preview of the chatbot app](/screenshot/preview_dark.png) |
 
+#[DEMO](https://cottoneyejoee.github.io/Cognigy/)
+
 ## Foreword :pushpin:
 
 The project environment was set up based on the [article](https://dev.to/jleonardo007/setup-react-with-typescript-and-esbuild-159i) by [@jleonardo00](https://github.com/jleonardo007) on [dev.to](https://dev.to/)
@@ -39,6 +41,8 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 - [x] Unit Tests
 
 - [x] Fully responsive design (set to mobile dimension for presentation)
+
+- [x] [Demo](https://cottoneyejoee.github.io/Cognigy/) is deployed on github pages
 
 ## Tooling :toolbox:
 
