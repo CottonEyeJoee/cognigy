@@ -65,5 +65,4 @@ export const buildOptions: BuildOptions = {
 	inject: ['esbuild/config/react-shim.ts'],
 	target: ['es6'],
 	loader: buildLoader,
-	define,
 }
