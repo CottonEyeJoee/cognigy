@@ -1,4 +1,4 @@
-import { Typography, Paper, styled } from '@mui/material'
+import { Paper, styled } from '@mui/material'
 
 import { Origin } from 'interfaces'
 
