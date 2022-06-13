@@ -6,13 +6,13 @@
 
 ## [Demo link](https://cottoneyejoee.github.io/Cognigy/)
 
-## Foreword :pushpin:
+## :pushpin: Foreword
 
 The project environment was set up based on the [article](https://dev.to/jleonardo007/setup-react-with-typescript-and-esbuild-159i) by [@jleonardo00](https://github.com/jleonardo007) on [dev.to](https://dev.to/)
 
 Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.com/jleonardo007/react-esbuild-template-ts-version)
 
-## Requirements :clipboard:
+## :clipboard: Requirements
 
 - [x] Written in Typescript
 
@@ -26,7 +26,7 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 
 - [x] All messages visually rendered in a chat history with _"message bubbles"_
 
-## Additional Features :fire:
+## :fire: Additional Features
 
 - [x] Custom bundler ([esbuild](https://esbuild.github.io/))
 
@@ -44,7 +44,7 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 
 - [x] [Demo](https://cottoneyejoee.github.io/Cognigy/) is deployed on github pages
 
-## Tooling :toolbox:
+## :toolbox: Tooling
 
 | Package                                  | Description                                                                                           |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -56,7 +56,7 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 | `dotenv`                                 | Enviroment variables library [(Github)](https://github.com/motdotla/dotenv)                           |
 | `jest`                                   | Unit testing library [(Github)](https://github.com/facebook/jest)                                     |
 
-## Setup :magic_wand:
+## :magic_wand: Setup
 
 1. Open the terminal in the root directory & execute `yarn install` (`npm i`)
 
@@ -69,7 +69,7 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 
 1. In the terminal execute `yarn start` (`npm start`) in the root directory
 
-## TODO :construction:
+## :construction: TODO
 
 - Refine dark colour theme
 
@@ -79,13 +79,13 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 
 - Embed external font/SVG files locally
 
-## Known Bugs :lady_beetle:
+## :lady_beetle: Known Bugs
 
 - When a new message is displayed containing an image URL, scrolling down is inconsistent due to the nature of images loaded via external URLs
 
 - Test does not run duo to syntax error, because of missing node environment
 
-## Scripts :scroll:
+## :scroll: Scripts
 
 ### `yarn install`
 
