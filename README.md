@@ -60,7 +60,7 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 
 1. Open the terminal in the root directory & execute `yarn install` (`npm i`)
 
-1. Create an `.env' file in the root directory and add the following variables to this file using the credentials given in the code challenge instructions (don't forget to save the file)
+1. Create an `.env.local' file in the root directory and add the following variables to this file using the credentials given in the code challenge instructions (don't forget to save the file)
 
    ```env
    API_ENDPOINT_URI={websocket-endpoint}
