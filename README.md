@@ -49,11 +49,11 @@ Git repository: [jleonardo007/react-esbuild-template-ts-version](https://github.
 | Package                                  | Description                                                                                           |
 | ---------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | `[react, react-dom]`                     | A JavaScript library for building user interfaces [(Github)](https://github.com/facebook/react)       |
-| `[redux, react-redux, @reduxjs/toolkit]` | Adaptation of the flux state managment for react [(Github)](https://github.com/reduxjs/redux)         |
+| `[redux, react-redux, @reduxjs/toolkit]` | Adaptation of the flux state management for react [(Github)](https://github.com/reduxjs/redux)         |
 | `[@mui/material, @mui/icons-material]`   | Material UI library [(Github)](https://github.com/mui/material-ui)                                    |
 | `@cognigy/socket-client`                 | Cognigy chatbot websocket , you find more information [here](https://github.com/Cognigy/SocketClient) |
 | `esbuild`                                | High performance bundler [(esbuild documentation)](https://esbuild.github.io/)                        |
-| `dotenv`                                 | Enviroment variables library [(Github)](https://github.com/motdotla/dotenv)                           |
+| `dotenv`                                 | Environment variables library [(Github)](https://github.com/motdotla/dotenv)                           |
 | `jest`                                   | Unit testing library [(Github)](https://github.com/facebook/jest)                                     |
 
 ## :magic_wand: Setup
